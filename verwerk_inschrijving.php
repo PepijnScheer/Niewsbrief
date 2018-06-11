@@ -8,7 +8,7 @@ $achternaam = $_POST['achternaam'];
 $mailadres = $_POST['mailadres'];
 
 // 1. CONNECTIE MAKEN MET DE DATABASE
-$dbc = mysqli_connect('localhost','root','root','mitj_db') or die ('Error connecting.');
+$dbc = mysqli_connect(HOST,USER,PASS,DBNAME) or die ('Error connecting.');
 // 2. OPDRACHT (QUERY) SCHRIJVEN VOOR DE DATABASE
 $query = "INSERT INTO nieuwsbrief_tutorial VALUES (0,'$voornaam','$tussenvoegsel','$achternaam','$mailadres')";
 // 3. QUERY UITVOEREN

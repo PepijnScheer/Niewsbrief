@@ -5,7 +5,7 @@ require_once ('connectvars.php');
 $mailadres = $_POST['mailadres'];
 
 // CONNECTIE MAKEN MET DE DATABASE
-$dbc = mysqli_connect(HOST,USER,PASS,DB) or die ('Error connecting.');
+$dbc = mysqli_connect(HOST,USER,PASS,DBNAME) or die ('Error connecting.');
 // QUERY SCHRIJVEN VOOR ZOEKEN NAAR DATA
 $query = "SELECT * FROM nieuwsbrief_tutorial WHERE mailadres = '$mailadres'";
 // QUERY UITVOEREN
